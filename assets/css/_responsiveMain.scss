@@ -1,0 +1,2562 @@
+@media (min-width: 0px) and (max-width: 1199px) {
+  header {
+    #nav-collapse {
+      position: fixed;
+      width: 100vw;
+      height: 100vh!important;
+      background: #0855C4;
+      top: 0;
+      left: 0;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      text-align: left;
+      z-index: 99;
+      img, svg{
+        // width: 95%;
+      }
+      a {
+        font-size: 1.4rem;
+        padding: .8rem 0;
+        color: white;
+        text-align: left;
+      }
+      hr {
+        border-top-color: white;
+      }
+      .box-redes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img, svg{
+          width: 2.5rem;
+          height: 2.5rem;
+          margin: 0;
+        }
+      }
+      .superior__email {
+        img, svg{ width: 2rem; margin: 0; }
+      }
+    }
+  }
+}
+@media (min-width: 360px) {
+  h3, h3 span {
+    font-size: 1.1rem;
+  }
+  h4 {
+    font-size: 14.5px;
+  }
+  h5, h5 span {
+    font-size: 12px;
+  }
+  h6, h6 span {
+    font-size: 12px;
+  }
+  p, p span {
+    font-size: 16px;
+  }
+  .form-control, .btn, span {
+    font-size: 18px;
+  }
+  .custom-checkbox label,
+  .custom-checkbox p,
+  .custom-checkbox span {
+    font-size: 12px;
+  }
+  .triangulo {
+    p { font-size: .95rem; }
+  }
+  header {
+    img.log { width: 16rem; }
+  }
+  footer {
+    #modalCubre, #modalPreguntasFrecuentes, #modalBeneficios {
+      height: 80vh;
+      h6, h6 span { font-size: .85rem; }
+    }
+  }
+  .box_principal-contador {
+    > div {
+      bottom: 6.8rem;
+    }
+  }
+  #home-box {
+  
+    #home {
+      h4, h4 span { font-size: .85rem; }
+      .asistencia #asistenciaSeguro .carousel-item .carousel-caption .borde p {
+        font-size: 11px;
+      }
+      &.ahorroseguro {
+        
+        .testimonio #testimonioSeguro .carousel-item .carousel-caption .borde {
+          top: 9rem;
+        }
+      }
+      .cotiza {
+        h3 { margin-top: 5px; }
+        .title {
+          height: 18.6rem;
+          a, a span {
+            bottom: 5.5rem; //6.5rem
+            left: 1rem;
+          }
+          p.tyc {
+            bottom: 6.5rem;
+            left: 1rem;
+          }
+          .principal {
+            h1, h1 span,
+            h1 p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .content {
+          margin-top: -6rem;
+          // margin-top: -9rem;
+          padding-right: 22px;
+          padding-left: 22px;
+          .first-page {
+            h1 {
+              margin-top: 1.2em;
+            }
+          }
+          .box-quote {
+            span {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .concepto {
+        .title {
+        }
+        .content {
+          &__row {
+            img, svg{
+              width: 5rem;
+            }
+          }
+        }
+      }
+      .asistencia {
+        .content {
+          .telefono h3 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    /* ESTILOS PARA EL BANNER */
+    #banner-row {
+      .col-12 {
+        padding: 0;
+        #banner-tv, #banner_tv {
+          margin-top: 7px;
+          height: 67px;
+          img, svg{
+            width: 90px;
+            left: 11%;
+            bottom: -9%;
+          }
+          p, p span, p a { font-size: .9rem; }
+          p {
+            width: 51%;
+            text-align: left;
+            font-size: 12px;
+            margin-left: 12em;
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+  }
+
+    h4 { font-size: 1.1rem }
+    h5 { font-size: 1rem }
+    #cotiza {
+      h3, h3 span { font-size: 1.4rem; }
+    }
+
+    #pago {
+      h3, h3 span { font-size: 1.4rem; }
+      h4, h4 span { font-size: 1.1rem; }
+      h5, h5 span { font-size: .92rem; }
+      .content {
+        .box-resumen {
+          input { font-size: .92rem; }
+        }
+        .box-pago {
+          .content {
+            .form-payment {
+              .box-card {
+                .mes-anio {
+                  .card-custom__date .form-group-custom:first-child {
+                    width: calc(2rem + 43px);
+                  }
+                }
+              }
+            }
+  
+          }
+          
+        }
+        .box-beneficios {
+          .carousel.slide {
+            .carousel-caption {
+              right: 2%;
+              left: 2%;
+              .border {
+                height: 9.5rem;
+                img, svg{
+                  width: 90px;
+                  margin-left: 10px;
+                }
+              }
+            }
+            img.img-fluid {
+              height: 10rem;
+            }
+          }
+        }
+      }
+    }
+  
+}
+
+// iPhone 6/7/8/X
+@media (min-width: 375px) {
+  h2, h2 span { font-size: 1.8rem; }
+  h3, h3 span { font-size: 1.05rem; }
+  h4, h4 span { font-size: 15px; }
+  h5, h5 span { font-size: 13.5px; }
+  p { font-size: 15px;}
+  span { font-size: 11px; }
+  .form-control, .btn, span { font-size: 18px; }
+  .btn-dark.disabled { font-size: 18.5px; }
+  .white-transparent {
+    div.top {
+      left: 90%;
+    }
+  }
+  header {
+    img.logo {
+      width: 17rem;
+    }
+    .navbar-toggler-icon {
+      width: 2.5em;
+    }
+  }
+  .box-banner #banner-tv {
+    .close span { font-size: 1.1rem!important; padding: 7px 5px; }
+  }
+  .box_principal-contador {
+    > div {
+      bottom: 7.3rem;
+      left: 1rem;
+    }
+  }
+  
+  #home-box {
+    
+    #home {
+      h4, h4 span { font-size: 1.2rem; }
+      .principal .tyc { bottom: 6.5rem; }
+      .asistencia #asistenciaSeguro .carousel-item .carousel-caption .borde p {
+        font-size: 11.9px;
+      }
+      &.ahorroseguro {
+        
+        .testimonio #testimonioSeguro {
+          padding: 0 1rem;
+          p, p span { font-size: .95rem; }
+          .carousel-item .carousel-caption .borde {
+            top: 8.6rem;
+          }
+        }
+      }
+      .cotiza {
+        .title {
+          height: 18.9rem;
+          background-position-x: right;
+          background-size: 120vw;
+          a { bottom: 6.5rem; }
+          .principal {
+            h1, h1 span,
+            h1 p { font-size: 1.45rem;}
+          }
+        }
+        .content {
+          margin-top: -6.5rem;
+          // margin-top: -9.5rem;
+          .box-quote {
+            h3, h3 span { font-size: 1.2rem; }
+            input, button {
+              width: 295px;
+              height: 52px;
+            }
+            p { font-size: 13px;}
+            span { font-size: 10.8px; }
+          }
+        }
+      }
+      .concepto {
+        .content__row { margin-top: 2rem; }
+        .content {
+          img, svg{ width: 4.8rem; }
+          .col-7 { padding-right: 2px; }
+          .texto {
+            margin-top: 14px;
+            margin-bottom: 14px;
+          }
+        }
+      }
+      .testimonios, .asistencia{
+        .content {
+          .carousel.slide {
+            margin-right: 1rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+      .asistencia {
+        .content {
+          .carousel.slide {
+            img, svg{
+              height: 19.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+    h4 { font-size: 1.2rem; }
+    #cotiza {
+      h3, h3 span { font-size: 1.4rem; }
+      .verificar-data {
+        label { font-size: 15.5px; }
+        .editar{
+          input, select { font-size: 17px; padding-right: 0; }
+          label { font-size: 14.5px; }
+        }
+      }
+    }
+    #pago {
+      h3, h3 span { font-size: 1.5rem; }
+      h4, h4 span { font-size: 1.2rem; }
+      h5, h5 span { font-size: .92rem; }
+      .content {
+        .box-beneficios {
+          .carousel.slide {
+            .carousel-caption {
+              right: 3%;
+              left: 3%;
+              .border {
+                height: 9.8rem;
+                img, svg{
+                  width: 97px;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+    #confirm {
+      p { font-size: 15px; }
+    }
+ 
+}
+
+// Pixel 2 -- Más usado
+@media (min-width: 410px) {
+  h1, h1 span { font-size: 1.8rem; }
+  h3, h3 span { font-size: 1.15rem; }
+  h4, h4 span { font-size: 1.05rem; }
+  h5 { font-size: 14px; }
+  .stepper { margin-right: 21px; margin-left: 21px; }
+  .triangulo p {
+    font-size: 1.1rem;
+  }
+  header {
+    img, svg{ width: 8rem; }
+  }
+  footer {
+    #modalCubre, #modalPreguntasFrecuentes,
+    #modalBeneficios {
+      .modal-dialog {
+        min-height: 83vh;
+      }
+    }
+  }
+  .box-banner #banner-tv, .box-banner #banner_tv {
+    padding-right: 14px;
+    padding-left: 14px;
+    width: 100%;
+    margin: 0;
+    // p, p span, p a { font-size: 1rem; }
+    // img { width: 2.8rem; }
+  }
+/** HOME **/
+  #home-box {
+    #home {
+      .asistencia #asistenciaSeguro .carousel-item .carousel-caption .borde {
+        height: 7rem;
+        h4 { font-size: 18px; }
+        p, p span {
+          font-size: 13px;
+        }
+      }
+      &.ahorroseguro {
+        
+        .testimonio #testimonioSeguro {
+          padding: 0 1.2rem;
+          p, p span { font-size: 1rem; }
+          .carousel-item .carousel-caption .borde {
+            top: 7.6rem;
+          }
+        }
+      }
+      .cotiza {
+        .title {
+          background-size: 120vw;
+          background-position-x: right;
+          height: 19.8rem;
+          .principal h1, .principal h1 span, .principal h1 p {
+            font-size: 1.6rem;
+          }
+        }
+        .content {
+          padding-right: 30px;
+          padding-left: 30px;
+          margin-top: -6.5rem;
+          .box-quote {
+            max-width: 438px;
+            span { font-size: 11.5px; }
+          }
+        }
+      }
+      .concepto {
+        .texto {
+          padding: 7px;
+          margin-top: 5px;
+          margin-bottom: 18px;
+        }
+      }
+      .testimonios, .asistencia{
+        .content {
+          .carousel.slide {
+            .carousel-caption {
+              right: 12%;
+              left: 12%;
+            }
+          }
+        }
+      }
+      .testimonios {
+        .content {
+          .carousel.slide {
+            img.img-fluid {
+              height: 16rem!important;
+            }
+          }
+        }
+      }
+      .asistencia {
+        .content .carousel.slide img, svg{
+          height: 21rem;
+        }
+        .content {
+          .telefono h3 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .consulta {
+        .questions__acordeon .card-header {
+          a, a.btn-secondary[data-v-894ab222]:not(:disabled):not(.disabled):active,
+          a.btn-secondary:not(:disabled):not(.disabled).active,
+          a.show > .btn-secondary.dropdown-toggle,
+          a.collapsed, a.collapsed.btn-secondary[data-v-894ab222]:not(:disabled):not(.disabled):active,
+          a.collapsed.btn-secondary:not(:disabled):not(.disabled).active,
+          a.collapsed.show > .btn-secondary.dropdown-toggle {
+            color: #454A6C;
+            font-size: 1.15rem;
+            padding-right: 2.5rem;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    #banner-row {
+      .col-12 {
+        #banner-tv, #banner_tv {
+          img, svg{ left: 14%; }
+          p, p a, p span {
+            width: 50%;
+            margin-left: 14em;
+          }
+        }
+      }
+    }
+  }  
+    h4, h4 span { font-size: 1.25rem; }
+    #cotiza {
+      h3, h3 span { font-size: 1.55rem; }
+      label { font-size: 16.5px; }
+      .verificar-data {
+        .texto {
+          .title .btn { font-size: 13px; }
+        }
+        .editar{
+          .title .btn { font-size: 13px; }
+          input, select { font-size: 18px;; }
+          label { font-size: 15.5px; }
+        }
+      }
+      #form-calculate {
+      }
+      #devolucion {
+        h3 { padding: 0 14px; }
+      }
+    }
+    /***********************/
+    /** PASO: paga **/
+    #pago {
+      h3, h3 span {
+        font-size: 1.55rem;
+      }
+    }
+
+}
+
+@media(min-width: 415px) {
+  .box-banner #banner-tv, .box-banner #banner_tv {
+    p br { display: none; }
+    p, p span, p a { margin: 14px 0; }
+  }
+  #home-box {
+    #home .cotiza .title {
+      background-size: 116vw;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  h3, h3 span { font-size: 20px; }
+  h4 { font-size: 17px; }
+  h5 { font-size: 15px; }
+  .container { max-width: initial; }
+  header {
+    border-bottom-width: 1.5px;
+    img.logo { width: 14rem; }
+    img.telefono { width: 1.5rem; }
+  }
+  footer {
+    #modalCubre {
+      .cubre img, .no-cubre img {
+        width: 75%;
+      }
+    }
+  }
+  main { min-height: auto; }
+  .white-transparent {
+    top: 3.7rem;
+    div.top {
+      left: 86.5%;
+      top: -7px;
+    }
+    .border_text {
+      width: 100%;
+    }
+  }
+  .box-banner #banner-tv, .box-banner #banner_tv {
+    p br { display: none; }
+    p, p span, p a { font-size: 1.1rem; margin: 10px 0; }
+    .imagen {
+      text-align: center!important;
+    }
+    img, svg{
+      width: 3.7rem;
+      margin-top: .2rem;
+    }
+    .close span {
+      font-size: 1.5rem!important;
+    }
+  }
+  #home-box {
+    header {
+      .navbar-light {
+        width: 98%;
+      }
+      .pt-box-banner { padding-top: 6rem; }
+      
+      .logo-menu { height: 69px; }
+    }
+    .pt-box-banner { padding-top: 6rem; }
+    #home {
+      h4, h4 span { font-size: 1.065rem }
+      .cotiza {
+        .title {
+          height: 23rem;
+          .principal {
+            h1, h1 span, h1 p {
+              padding-top: 2.6rem;
+              font-size: 1.7rem
+            }
+          }
+        }
+        .content {  
+          margin-top: -5.9rem;
+          // margin-top: -8.9rem;
+          .box-quote {
+            input, button {
+              width: 360px;
+              height: 51px;
+            }
+          }
+        }
+      }
+      .testimonios{
+        img.img-fluid {
+          height: 13.5rem !important;
+        }
+      }
+    }
+    #form-dni {
+      #cliente-seguro-vida {
+        .modal-dialog {
+          max-width: 440px;
+        }
+      }
+    }
+    /* ESTILOS PARA EL BANNER */
+    #banner-row {
+      .col-12 {
+        #banner-tv, #banner_tv {
+          margin-top: 7px;
+          height: 51px;
+          img, svg{
+            width: 70px;
+            left: 17%;
+          }
+          p, p a {
+            width: 54%;
+            margin-left: 15em;
+          }
+        }
+      }
+    }
+  }
+  /** PASO: cotiza **/
+  #cotiza {
+    label { font-size: 17.5px; }
+    .verificar-data {
+      .editar{
+        input, select { font-size: 19px; }
+        label { font-size: 16.5px; }
+      }
+    }
+    #devolucion {
+      h3 { padding: 0; }
+    }
+    #form-calculate {
+      select + label[placeholder],
+      .select-wrapper + label[placeholder] {
+        margin-top: calc(-2.5em - -1px);
+      }
+    }
+  }
+  /** PASO: paga **/
+  .pago {
+    label h4 { margin-top: 4px; }
+    label h5, label h5 span, .custom-checkbox span { font-size: 13px; }
+  }
+  /***********************/
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h3, h3 span { font-size: 19px; }
+  h4 { font-size: 18px; }
+  h5, h5 span { font-size: 16px; }
+  p { font-size: 17px; }
+  .form-control, .btn, .btn-dark.disabled, span { font-size: 19px; }
+  p { font-size: 18px;}
+  .custom-checkbox label, .custom-checkbox p,
+  .custom-checkbox span { font-size: 16px; }
+  .container {
+    > img {
+      width: 3.5rem;
+      position: absolute;
+      top: 4rem;
+      left: 3rem;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .row {
+      padding-right: 15px; padding-left: 15px;
+    }
+  }
+  .first-page, .second-page {
+    margin-top: calc(100vh - 90vh);
+  }
+  #is .stepper {
+    .steps .steps-marker {
+        svg { height: 26px; }
+      }
+    .steps.is-horizontal .steps-segment:not(:last-child):after {
+      height: 0.1em; top: 1.45rem;
+    }
+    .steps .steps-marker {
+      width: 3rem;
+      height: 3rem;
+      svg { height: 25px; }
+    }
+  }
+
+  header {
+    text-align: left;
+    img, svg{ width: 8rem; margin-left: 3rem; }
+    img.logo {
+      margin-left: 0;
+    }
+  }
+  .box-banner #banner-tv, .box-banner #banner_tv {
+    img, svg{
+      width: 3rem;
+      margin-left: 0;
+    }
+    .close span {
+      padding: 10px 8px;
+    }
+  }
+  .box_principal-contador > div { bottom: 8.9rem; }
+  #home-box {
+    overflow: hidden;
+    main { overflow: none; }
+    
+    .pt-box-banner { padding-top: 7.5rem; }
+    #home {
+      h4, h4 span { font-size: 1.13rem; }
+      .container { padding: 0 }
+      .cotiza {
+        .title {
+          height: 65vw;
+          background-size: 120vw;
+          .principal {
+            h1, h1 span, h1 p {
+              font-size: 2.1rem
+            }
+          }
+          &.vale { //768
+            // background-image: url('../../static/media/images/home_vale80.png');
+            background-image: url('../../static/media/images/home_vale_home.png');
+            background-position-y: 3rem;
+            // background-size: 50vh;
+            background-size: 75vh;
+            background-position-x: 1rem;
+            // min-width: 680px!important;
+            // max-width: 992px!important;
+            margin: 0 auto;
+            .box_principal-contador {
+              text-align: right;
+              > div { right: 0;bottom: 12.5rem; #contadorCyber {margin-right: 0!important;}}
+            }
+            .principal { 
+              height: 100%;
+            }
+            a { right: 1.5rem;
+              bottom: 13.2rem;
+              cursor: pointer;
+              z-index: 1; }
+            p { right: 1.5rem;
+              bottom: 12.5rem;
+              cursor: pointer;
+              z-index: 1; }
+            a, a span { font-size: 1rem; }
+            a:hover { text-decoration: none; }
+            // &._80 {
+            //   background-image: url('../../static/media/images/home_vale80.png');
+            // }
+            // &_cyber {
+            //   background-image: url('../../static/media/images/home_valecyber.svg');
+            // }
+          }
+        }
+        .content {
+          margin-top: -21vw;
+          // margin-top: -28vw;
+        }
+      }
+      .asistencia {
+        .content {
+          .carousel.slide {
+            
+            width: 65%;
+            margin: 0 auto!important;
+            img, svg{
+              height: 21rem;
+            }
+          }
+        }
+      }
+      .consulta {
+        .card-body {
+          width: 75%;
+        }
+      }
+      .testimonios {
+        .content {
+          h4 { height: 5rem; }
+          .carousel.slide {
+            margin-right: 9.5rem;
+            margin-left: 9.5rem;
+            img.img-fluid {
+              height: 17rem!important;
+            }
+          }
+        }
+      }
+    }
+    #banner-row {
+      .col-12 {
+        #banner-tv, #banner_tv {
+          p {
+            font-size: 13px;
+            margin-left: 20em;
+            width: 45%;
+          }
+        }
+      }
+    }
+  }  /** PASO: cotiza **/
+  #cotiza {
+    h5, h5 span { font-size: 1rem; }
+  }
+  /***********************/
+
+  #pago {
+    h5, h5 span { font-size: 1rem; }
+    .content .box-pago .content .form-payment {
+      #inputFechaExpiracion {
+        border-right: none;
+        border-bottom: 1px solid #c4c4c4;
+      }
+    }
+  }
+  .ibk #confirm { background-color: #fff!important; }
+  #confirm {
+    margin-top: 0;
+    padding-top: calc(100vh - 95vh);
+    background: #EDF0F7;
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 992px;
+    }
+    p { font-size: 18px; }
+  }
+  footer {
+    .footerv2-desktop .box-redes{
+      img, svg{
+        margin: 0 7px;
+      }
+    }
+    .llamanos {
+      img, svg{
+        margin-top: -.5rem;
+        width: 1.6rem;
+        padding-right: 0!important;
+      }
+    }
+  }
+}
+
+@media (min-height: 768px)  and (min-width: 992px) {
+  #home-box {
+    #home .cotiza {
+      height: calc(100vh - 290px)!important;
+    }
+  }
+  
+}
+@media (min-height: 992px) and (min-width: 768px) {
+  #home-box #home .cotiza .title.vale {
+    background-size: 30vh;
+  }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+  h4, h4 span { font-size: 1rem; }
+  //  h6, h6 span { font-size: 1rem; }
+  .text-loader h1 { font-size: 1.9rem; }
+  .writeme img { width: 13.5rem; }
+  .writeme img.pasos {bottom: 6rem;}
+  .writeme img.pasos-call {width: 12.7rem; bottom: 11rem; right: 1.35rem; height: 5rem}
+  .form-control, .btn, .btn-dark.disabled, .custom-select { font-size: 20px; }
+  .custom-checkbox label, .custom-checkbox p, .custom-checkbox span {
+    font-size: 15px;
+  }
+  .box-banner  #banner-tv  {
+    p { font-size: .9rem; 
+      a { display: inline; font-size: .8rem;}
+    }
+  }
+  #is .stepper {
+    .steps .steps-marker {
+      svg { height: 26px; }
+    }
+  }
+  .white-transparent {
+    div.top {
+      left: 94.5%;
+    }
+  }
+  .box-promocion {
+    p { line-height: 1.2; font-size: 1.1rem!important;}
+  }
+  // Mensaje de abandono
+  #is .abandono {
+    
+    #quote, #verifyData, #pay {
+      .container {
+        padding: 0;
+      }
+      .modal-content {
+        width: 400px!important;
+        margin: 0 auto;
+        // background: transparent linear-gradient(180deg, #0855C4 0%, #00ADEE 100%) 0% 0% no-repeat padding-box;
+        background: linear-gradient(0deg, #BE7100 0%, #FFD855 100%) !important;
+        opacity: 1;
+      }
+      .modal-body {
+        h2, h2 span { font-size: 1.45rem!important; }
+        h3, h3 span { font-size: 1.2rem!important; }
+      }
+    }
+    &.endosos {
+      #quote .modal-content, 
+      #verifyData .modal-content, 
+      #pay .modal-content {
+        background: white!important;
+      }
+    }
+  }
+  header .navbar-toggler-icon {
+    width: 2rem;
+  }
+  footer {
+    #modalCubre {
+      .cubre, .no-cubre {
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .box_principal-contador > div { bottom: -17rem; }
+  .box-banner #banner-tv, .box-banner #banner_tv {
+    padding-left: 45px;
+    .col-md-1, .col-lg-1 { max-width: 4%!important; }
+    .imagen {
+      text-align: left!important;
+    }
+    img, svg{
+      // width: 9.5rem!important;
+      padding: 7px 0!important;
+    } 
+  }
+  /** HOME **/
+  #home-box {
+    overflow: hidden;
+    /* ESTILOS PARA EL BANNER */
+    // HEADER
+    main > header {
+      .container { padding: 0; }
+      #main-row-container {
+        margin: 0 auto;
+        padding: 0 14px;
+        padding-left: 0;
+        .navbar-dark { height: 69px; padding: 0;}
+        img.logo { height: 30px;  width: auto; }
+        .navbar-light { width: 100%;padding-right: 45px; padding-left: 45px; }
+        // Lista
+        #nav-collapse {
+          justify-content: flex-end;
+          ul {
+            align-items: center;
+            li {
+              a {
+                font-family: 'Omnes Medium';
+              }
+              a:hover, a:focus { color: #454A6C!important; border: none!important; }
+              button {
+                width: 150px;
+                height: 40px;
+                border-radius: 3px;
+              }
+              .call {
+                align-items: center;
+                img, svg{
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    .box_principal-contador > div { 
+      bottom: 2.5rem; //4rem David
+      left: 4rem;
+    }
+    #home {
+      .container { padding: 0; }
+      h4 { font-size: 1rem; }
+      .principal .tyc {
+        bottom: 4rem;
+        left: 1rem;
+      }
+      .box-cotiza {
+        background-color: #F1F4F9;
+        .cotiza.experimento_web, .cotiza.experimento_universitario,
+        .cotiza.experimento_jubilacion, .cotiza.experimento_seguro,
+        .cotiza.experimento_segura, .title.experimento_web,
+        .title.experimento_universitario, .title.experimento_jubilacion,
+        .title.experimento_seguro, .title.experimento_segura {
+          background: none;
+        }
+        .cotiza.experimento_web, .cotiza.experimento_universitario,
+        .cotiza.experimento_jubilacion, .cotiza.experimento_seguro,
+        .cotiza.experimento_segura, .title.experimento_web {
+          background-position-x: right;
+          background-position-y: 6rem;
+        }
+        .cotiza.experimento_web { background-image: url('../../static/media/seguro_vida/home/banner_experimento.png'); }
+        // .cotiza.experimento_universitario { background-image: url('../../static/media/universitario/home/banner_experimento.png'); }
+        //.cotiza.experimento_jubilacion { background-image: url('../../static/media/ahorro_jubilacion/home/banner_experimento.png'); }
+        //.cotiza.experimento_seguro { background-image: url('../../static/media/ahorro_seguro/home/banner_experimento.png'); }
+        .cotiza.experimento_segura { background-image: url('../../static/media/proteccion_segura/home/banner_experimento.png'); }
+      }
+
+      &.segurouniversitario {
+        &.challenger {
+          
+          .cotiza .content {
+            margin-top: 2rem;
+          }
+          .datos-estadisticos {
+            h3, h3 span { font-size: 1.5rem; }
+            .border { margin: 0; padding:28px 10px; }
+          }
+          .beneficios {
+            .img-fluid {
+              height: 16rem;
+            }
+            .frase {
+              bottom: -1.5rem;
+              width: fit-content;
+              .pila {
+                background-color: #fff!important;
+                padding-right: 3rem;
+                padding-left: 3rem;
+                padding-top: .8rem;
+                padding-bottom: .8rem;
+                h2 { color: #00AEF0!important; }
+                h2 span { color: #0855c4; }
+                h2, h2 span { font-size: 1.6rem!important; }
+
+              }
+            }
+          }
+        }
+        .box-cotiza {
+          .cotiza {
+            background-image: url('../../static/media/images/home_estudiantil.svg');
+            &.vale, &.vale_cyber, &.vale_devolucion, &.vale_descuento {
+              background: linear-gradient(126deg, #0855C4 0%, #0081F0 100%);
+            }
+            &.vale_netflix {
+              background-color: #F1F4F9;
+              background-image: none;
+            }
+          }
+          .title {
+            // background-image: none;
+            
+            &.vale {
+              background-image: url('../../static/media/images/home_vale_home.png');
+            }
+            &.experimento_universitario { 
+              background: none;
+            }
+          }
+        }
+      }
+      &.jubilacion {
+        .box-cotiza {
+          .cotiza {
+            background-image: url('../../static/media/images/home_jubilacion.svg');
+           
+          }
+          .title {
+            background-image: none;
+            &.experimento_jubilacion { 
+              background: none;
+            }
+          }
+        }
+      }
+      &.proteccion {
+        .box-cotiza {
+          .cotiza {
+            background-image: url('../../static/media/seguro_vida/home/banner_proteccion.svg');
+          }
+          .title {
+            background-image: none;
+            &.experimento_segura { 
+              background: none;
+            }
+          }
+        }
+      }
+      &.ahorroseguro {
+        .box-cotiza {
+          .cotiza {
+            //background-image: url('../../static/media/ahorro_seguro/home/banner_experimento-responsive.png');
+            //borrar todo .vale_descuento para que se muestre la misma imagen para todas las landins - David
+            /*.vale_descuento {
+              background-image: url('../../static/media/ahorro_seguro/home/ahorro_seguro_home_banner_descuento.svg');
+            }*/
+            &.vale, &.vale_cyber, &.vale_80, &.vale_devolucion, &.vale_descuento {
+              background-image: url('../../static/media/ahorro_seguro/home/banner_carrousel-3-desktop.png');
+              background-size: 75vw;
+              background-position-x: right;
+              background-position-y: center;
+            }
+          }
+          .title {
+            background-image: none;
+            &.experimento_seguro { 
+              background: none;
+            }
+
+          }
+        }
+        .as_v1_otra_imagen{
+          background-image: url('../../static/media/ahorro_seguro/home/ahorro_seguro_home_banner_descuento.svg') !important;
+        }
+      }
+      &.blackweek {
+        .box-cotiza {
+          .title {
+            background-image: none;
+          }
+          .cotiza {
+            background-image: url('../../static/media/seguro_vida/home/fondo_blackweek.svg')!important;
+            background-size: 100%;
+          }
+        }
+        .principal { height: 100% }
+      }
+      .como-funciona_seguro-vida {
+        background: url('../../static/media/seguro_vida/home/fondo_como_funciona_optimize.svg');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: contain;
+      }
+      .cotiza {
+        // background-image: url('../../static/media/images/home_familia_protegida.svg');
+        background-size: 49%;
+        overflow: hidden;
+        height: 85vh;
+        // max-width: 1440px;
+        margin: 0 auto;
+        padding-top: 69px!important;
+        padding-left: 45px;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        .stock {
+          top: 2rem;
+          h3 { font-size: 2.5rem; }
+          h4 { font-size: 2rem; }
+        }
+        &.endosos_multibanco {
+          background-image: url('../../static/media/images/home_familia_protegida.svg');
+        }
+        &.promocion {
+          background-image: url('../../static/media/images/home_familia_protegida_covid.svg');
+        }
+        &.vale_devolucion, &.vale_descuento {
+          background: linear-gradient(0deg, #BE7100 0%, #FFD855 100%) !important;
+          padding-top: 3rem!important;
+          // background: linear-gradient(126deg, #0855C4 0%, #0081F0 100%) !important;
+        }
+        // &.vale, &.vale_cyber, &.vale_80, &.vale_devolucion, &.vale_descuento {
+        //   background-image: url('../../static/media/ahorro_seguro/home/banner_carrousel-3-desktop.png');
+        //   background-size: 75vw;
+        //   background-position-x: right;
+        //   background-position-y: center;
+        //   padding-top: 10rem!important;
+        //   // background: linear-gradient(126deg, #0855C4 0%, #0081F0 100%) !important;
+        // }
+        &.vale_netflix {
+          background-color: #F1F4F9;
+          background-image: none;
+        }  
+        .title {
+          width: 100%;
+          height: 100%;
+          background-image: none;
+          hr { border-top: none; display: block; }
+          a, p {left: 4rem;}
+          &.endosos_multibanco {
+            background-image: none;
+          }
+          &.promocion {
+            background-image: none;
+            .principal { 
+              height: 100%;
+            }
+          }
+          &.vale {
+            background-color: transparent;
+            background-position-y: 6rem;
+            .box_principal-contador {
+              > div { bottom: 8.9rem;}
+            }
+            a {
+              z-index: 99;
+              width: 100%;
+              height: 99%;
+              right: 6rem;
+              bottom: 3rem;}
+            &_80 {
+              background-image: url('../../static/media/images/home_vale80.png');
+              background-color: transparent;
+              background-size: 50vh;
+              // background-position-y: 6rem;
+              // min-width: 680px!important;
+              // max-width: 992px!important;
+              margin: 0 auto;
+              .box_principal-contador {
+                text-align: right;
+                > div { right: 0; #contadorCyber {margin-right: 0!important;}}
+              }
+              .principal { 
+                height: 100%;
+              }
+              a { 
+                bottom: 3.5rem;
+                height: auto;
+                right: 2rem;
+                width: auto;
+              }
+            }
+            &_cyber {
+              background-image: url('../../static/media/images/home_valecyber.svg');
+              background-color: transparent;
+              background-position-y: calc((100% / 2) - 3rem);
+              background-size: calc(100% - 5rem);
+              background-position-x: 4rem;
+              // min-width: 680px!important;
+              // max-width: 992px!important;
+              margin: 0 auto;
+              .box_principal-contador {
+                text-align: right;
+                > div { right: 0; #contadorCyber {margin-right: 0!important;}}
+              }
+              .principal { 
+                height: 100%;
+              }
+              a { 
+                bottom: 3.5rem;
+                height: auto;
+                right: 2rem;
+                width: auto;
+              }
+            }
+            
+            &_descuento {
+              // background-image: url('../../static/media/common/home/banner_descuento.svg')!important;
+              background-color: transparent;
+              background-position-y: 35%;
+              background-size: 80%;
+              background-position-x: left;
+              // min-width: 680px!important;
+              // max-width: 992px!important;
+              margin: 0 auto;
+              .box_principal-contador {
+                text-align: left;
+                > div {     right: 0;
+                  bottom: 2Frem;
+                  left: 3rem; #contadorCyber {margin-right: 0!important;}}
+              }
+              .principal { 
+                height: 100%;
+              }
+              a,p.tyc { 
+                bottom: 0.5rem; //David (1.4rem) orig;
+                height: auto;
+                right: 2rem;
+                width: auto;
+                font-size: .9rem;
+              }
+              p { 
+                bottom: .5rem;
+              }
+            }
+            &_netflix {
+              background-image: url('../../static/media/common/home/banner_netflix.svg');
+              background-color: transparent;
+              background-position-y: bottom;
+              background-size: contain;
+              background-position-x: right;
+              margin: 0 auto;
+              .box_principal-contador {
+                text-align: right;
+                > div { left: 3rem; #contadorCyber {margin-right: 0!important;}}
+              }
+              .principal { 
+                height: 100%;
+              }
+              a { 
+                bottom: .5rem;
+                height: auto;
+                right: 2rem;
+                width: auto;
+              }
+            }
+          }
+          
+          .principal { 
+            height: 50%;
+            align-items: flex-end;
+            br { display: none; }
+            h1 { text-align: left; padding: 0 14px;line-height: 1;}
+          }
+          
+        }
+        .content {
+          max-width: 440px;
+          margin: 0;
+          
+          .box-quote {
+            width: 438px;
+            h2, h2 span { font-size: 1.4rem!important; }
+            h3, h3 span { font-size: 1.35rem!important; }
+            h3 {
+              margin-top: 2.8rem;
+              margin-bottom: 1.3rem;
+            }
+            span { font-size: .8rem; }
+            p { font-size: 15px; }
+            .container { height: 100%; }
+            .pila {
+              right: -1rem;
+            }
+            input, button {
+              width: 360px;
+              height: 51px;
+              margin: 0 auto!important;
+            }
+            input { font-size: 1.15rem; }
+            button { font-size: 1rem; }
+            #form-dni {
+              .row { padding: 0; }
+            }
+          }
+        }
+
+      }
+      .concepto {
+        .content__row { margin-top: 0; }
+        .content {
+          margin-top: 2rem;
+          h3 {
+            // font-size: .85rem!important;
+            line-height: 1.4;
+          }
+          img, svg{ width: 80px!important; height: 80px!important; }
+        }
+      }
+      // OTROS
+      .beneficios, .beneficios_mercado,
+      .testimonios, .asistencia, .consulta {
+        padding: 4rem 1.5rem ;
+      }
+      .beneficios,
+      .beneficios_mercado {
+        .img-beneficio {
+          height: 64px;
+          margin-bottom: 1rem;
+        }
+        br { display: none; }
+        .content {
+          margin-top: 4rem;
+        }
+      }
+      .beneficios_mercado br { display: initial; }
+      .asistencia {
+        padding-bottom: 4.5rem;
+        .content {
+          .carousel.slide {
+            width: 50%;
+          }
+        }
+      }
+      .testimonios {
+        padding-bottom: 0;
+        .o-hidden {  overflow: hidden; }
+        .content {
+          margin-top: 0;
+          h4 { height: 7rem; }
+          h3.text-info { font-size: 1rem; }
+          .box {
+            padding-top: 2.5rem;
+            img.img-fluid {
+              border: none;
+              height: 18rem!important;
+            }
+            .borde {
+              border: 1px solid #B2B4C7;
+              padding-top: 2rem;
+              height: 20.5rem;
+              > img, svg{
+                position: absolute;
+                top: -1rem;
+                right: calc(calc(100% - 40px) / 2);
+                height: 32px;              
+              }
+            }
+          }
+          .carousel-inner { overflow: initial; }
+          .carousel.slide {
+            background-color: transparent!important;
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 0;
+            .carousel-caption {
+              right: 0;
+              left: 0;
+              width: 99%;
+              .box-texto-valor {
+                height: 335px;
+              }
+              .texto {
+                height: 60%;
+              }
+              .valor {
+                height: 17%;
+              }
+            }
+          }
+          .carousel-indicators {
+            bottom: -2.5rem;
+            li:nth-child(3), li:nth-child(4),
+            li:nth-child(5), li:nth-child(6) {
+              display: none;
+            }
+          }
+        }
+      }
+      .consulta {
+        br { display: none; }
+      }
+    }
+  }
+  /** PASO: cotiza **/
+  #cotiza {
+    margin: 0 auto;
+    min-height: 90vh;
+    .container {
+      padding-bottom: 2rem;
+    }
+    .verificar-data {
+      .data {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border: 1px solid #D8D8D8;
+        padding-bottom: 1rem;
+        button.editar {
+          font-size: 14px;
+        }
+      }
+    }
+    #form-calculate {
+      padding-right: 0rem;
+      padding-left: 0rem;
+      select {
+        height: calc(3em + -9px);
+      }
+      .resumen-cotizacion {
+        // position: relative;
+        
+      }
+    }
+    .white-transparent {
+      top: 3.7rem;
+      div.top {
+        left: 88%;
+        top: -11px;
+      }
+      .border_text {
+        width: 100%;
+      }
+    }
+  }
+  .verifica {
+    h3 { font-size: 18.5px; }
+      button {
+        position: static;
+        width: 25%;
+        border-radius: 9px;
+        margin-top: 1.5rem!important;
+      }
+  }
+  .pago {
+    label h5, label h5 span, .custom-checkbox span { font-size: 11.5px; }
+      #creditCardNumber {
+        background-position-y: 9px;
+      }
+      #dataExpiry {
+        background-position-y: 10px;
+      }
+      #cardCvv {
+        background-position-y: 11px
+      }
+      .custom-control {
+        padding-left: 1.2rem;
+      }
+    #tool-cvv-max {
+      .tooltip {
+        .tooltip-inner {  max-width: 320px; }
+      }
+    }
+  }
+
+  #confirm {
+    &.steps { 
+      select { text-align: center;  
+        &::placeholder { text-align: center; }
+        > option { text-align: center; }
+      }
+     }
+    p { font-size: 17px; }
+    .borde {
+      border: 1px solid #D8D8D8;
+    }
+  }
+  #pago {
+    &.ahorro-seguro {
+      .container {
+        max-width: initial;
+      }
+      .box-beneficios {
+        overflow-y: initial;
+        height: auto;
+        max-width: 480px;
+        margin: 0 auto;
+        .carousel.slide {
+          width: 100%;
+          .carousel-caption {
+            right: 0;
+            left: 0;
+            .border {
+              margin: 0;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .dropdown-menu.show { width: 100% }
+  h1 , h1 span { font-size: 2.4rem!important; }
+  h2, h2 span { font-size: 2.2rem!important; }
+  h3, h3 span { font-size: 1.1rem; }
+  h4, h4 span { font-size: 1.0rem; }
+  h5, h5 span { font-size: 15px; }
+  p { font-size: 15px; }
+  .box-banner  #banner-tv  {
+    p { font-size: 1rem; 
+      a { display: inline; font-size: .9rem;}
+    }
+  }
+  .form-control, .btn, .btn-dark.disabled, span, .custom-select { font-size: 16px; }
+  .custom-checkbox label, .custom-checkbox p, .custom-checkbox span {
+    font-size: 15px;
+  }
+  .form-group { margin-bottom: .75rem; }
+  .border-verify {
+    border: 1px solid #D1D1D1;
+    padding-top: 14px;
+  }
+  main { min-height: 100vh; }
+  .modal-overlay { display: none; }
+  .info-tooltip {
+    right: 0.2rem;
+    width: 1rem;
+  }
+  .triangulo {
+    left: 24.5rem;
+    top: -7rem;
+    padding: 1.7rem 1rem;
+    width: 13.5rem;
+    -webkit-filter: drop-shadow(0px 0px 1px #000);
+    filter: drop-shadow(0px 0px 1px #000);
+    &::before {
+      width: 2rem;
+      height: 2rem;
+      left: -0.8rem;
+      top: 2.5rem;
+      background-color: white;
+      transform: rotateZ(45deg);
+    }
+    p { font-size: 12px; }
+  }
+  header {
+    img, svg{ margin-left: 0; }
+  }
+  #is header {
+    padding: 0 7rem;
+    img.logo {
+      width: 17rem;
+    }
+  }
+  footer, #ibk {
+    height: auto;
+    .steps {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      bottom: 0;
+      width: 100%;
+      &.abs {
+        z-index: 9999;
+        position: fixed;
+        
+      }
+      .links {
+        > div:nth-child(1), > div:nth-child(2) {
+          border-bottom: none;
+          border-right: 1px solid #fff;
+        }
+      }
+    }
+    #modalCubre, #modalPreguntasFrecuentes,
+    #modalBeneficios {
+      height: 90vh;
+      h3, h3 span { font-size: 1.6rem; }
+      p, p span { font-size: .95rem; }
+      // .dropdown-box h4  { cursor: pointer; }
+      .close {
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        width: 1.2rem;
+      }
+      .modal-dialog {
+        max-width: 1200px;
+      }
+    }
+    #modalCubre {
+      .cubre, .no-cubre {
+        img {
+          width: 3.5rem;
+        }
+        > div:nth-child(2) > div .row {
+          height: 8.5rem;
+          margin: 7px;
+          align-items: center;
+        }
+      }
+    }
+    #modalBeneficios {
+      p { font-size: 0.7rem; margin-top: 5px; margin-bottom: 5px; }
+      hr {
+        color: #0855C4;
+        border-bottom: 4px solid #0855c4;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+      .modal-dialog {
+        padding-bottom: 21px;
+      }
+      img {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 10rem;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    #modalPreguntasFrecuentes  {
+      .questions-answer > div {
+        border: none;
+      }
+      .questions-answer .parrafo {
+        line-height: 1.2;
+        padding-left: 0;
+        color: #454A6C ;
+      }
+      h3 { cursor: pointer; }
+      hr {
+        width: 80%;
+        border-top-width: 2px;
+        border-top-color: #085cc4;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  #is .stepper {
+    p { font-size: 14px; }
+    .steps .steps-marker {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+  .white-transparent {
+    div.top {
+      left: 87%;
+    }
+  }
+
+  #home {
+    .first-page svg,
+    .second-page svg {
+      width: 5.25rem;
+      height: 5.25rem;
+    }
+    
+  }
+  .box-banner {
+    #banner-tv, #banner_tv {
+      padding-left: 65px;
+      padding-right: 65px;
+      .close span {
+        position: relative;
+        padding: 0;
+        display: block;
+      }
+      p { font-size: 1.15rem; }
+      p a {
+        font-size: .8rem;
+        display: inline;
+        margin-left: 7px;
+      }
+      // img { width:4rem; }
+    }
+                  // Slide with blank fluid image to maintain slide aspect ratio
+  }
+  #home-box {
+    main > header {
+      #main-row-container {
+        .navbar-light {
+          padding-right: 65px;
+          padding-left: 65px;
+        }
+      }
+      ul {
+        li a { font-size: 1rem; }
+      }
+      
+      
+    }
+    .pt-box-banner { padding-top: 3.5rem; }
+    #home {
+      .asistencia #asistenciaSeguro .asistencia-academica,
+      .asistencia #asistenciaSeguro .asistencia-medica,
+      .asistencia #asistenciaSeguro .asistencia-hogar,
+      .asistencia #asistenciaSeguro .asistencia-vial,
+      .asistencia #asistenciaSeguro .asistencia-mascota {
+        height: 22rem;
+        .borde {
+          height: 7rem;
+          h4 { font-size: 1.2rem; }
+          p, p span {
+            font-size: .75rem;
+          }
+        }
+        
+      }
+      &.ahorroseguro {
+        .como-funciona {
+          .ejemplo-uno .borde-total h3,
+          .ejemplo-dos .borde-total h3 {
+            font-size: 1rem;
+          }
+        }
+        .elegir {
+          .text-right img { width: 1.2rem; }
+          h4 { font-size: 1rem; }
+        }
+        .testimonio #testimonioSeguro {
+          max-width: 1200px;
+          margin: 0 auto;
+          .borde {
+            top: 9.5rem;
+          }
+          .card-body {
+            height: 12rem;
+          }
+        }
+        &.experimento_web {
+          .cotiza .title h1,
+          .cotiza .title h1 span { font-size: 1.95rem!important; }
+          .cotiza .title h2 { 
+            text-shadow: none;
+            font-size: 1.1rem!important; }
+          .cotiza .content { margin-top: 0; }
+          .carousel { height: inherit; }
+          .carousel .carousel-item > img {
+            height: 100%;
+          }
+          .carousel-caption { 
+            top: 0; left: 540px; text-align:left!important; 
+            height: 100%;
+            width: calc(100% - 540px);
+          }
+          .carousel-indicators {
+            bottom: 4rem;
+            left: -440px;
+            margin: 0;
+            left: 500px;
+            bottom: 2.5rem;
+            display: inline-flex;
+            width: 12rem;
+            li {
+              width: 3rem;
+              height: 0.6rem;
+              border-radius: 6px;
+              box-shadow: -3px 4px 12px -1px #ccc;
+              margin-top: 0;
+              border: none;
+            }
+          }
+          .carousel-inner,
+          .carousel .carousel-item { height: 100%!important; }
+          
+          // .carousel .carousel-item img.img-fluid { height: 100%!important; }
+          .cotiza .title {
+            min-width: 100%;
+            height: 100%!important;
+          }
+          .content.right {
+            position: absolute;
+          }
+        }
+      }
+      &.segurouniversitario {
+        &.challenger {
+          .cotiza {
+            padding-right: 0;
+            padding-left: 0;
+          }
+          .cotiza .title h1,
+          .cotiza .title h1 span { font-size: 1.95rem!important; }
+          .cotiza .title h2 { 
+            text-shadow: none;
+            font-size: 1.1rem!important; }
+          .cotiza .content { margin-top: 0; }
+          .cotiza .carousel { height: inherit; }
+          .cotiza .carousel .carousel-item > img {
+            height: 100%;
+          }
+          
+          .cotiza .carousel-caption { 
+            top: 0; left: 540px; text-align:left!important; 
+            height: 100%;
+            width: calc(100% - 540px);
+          }
+          .cotiza .carousel-indicators {
+            bottom: 4rem;
+            left: -440px;
+            margin: 0;
+            left: 500px;
+            bottom: 2.5rem;
+            display: inline-flex;
+            width: 12rem;
+            li {
+              width: 3rem;
+              height: 0.6rem;
+              border-radius: 6px;
+              box-shadow: -3px 4px 12px -1px #ccc;
+              margin-top: 0;
+              border: none;
+            }
+            .active { background-color: #fff; }
+          }
+          .cotiza .carousel-inner,
+          .cotiza .carousel .carousel-item { height: 100%!important; }
+          
+          // .carousel .carousel-item img.img-fluid { height: 100%!important; }
+          .cotiza .title {
+            min-width: 100%;
+            height: 100%!important;
+          }
+          .content.right {
+            position: absolute;
+          }
+          .beneficios {
+            img {
+              height: 3.2rem;
+
+            }
+          }
+        }
+      }
+      &.blackweek {
+        .principal {
+          max-width: 750px;
+        }
+      }
+      &.navidad {
+        .principal {
+          max-width: 750px;
+        }
+      }
+      &.hot_sale {
+        .principal {
+          .tyc { position: initial; width: 100%; margin-top: 2rem; font-size: 15px; }
+        }
+      }
+      h4, h4 span { font-size: .95rem; }
+      .consulta .texto header a,
+      .consulta .texto .card-body h3{
+        font-size: 1.1rem;
+      }
+      .beneficios,
+      .testimonios, .consulta {
+        padding: 5.5rem 8rem ;
+      }
+      // Primera sección
+      .cotiza {
+        padding-left: 65px;
+        // background-size: 57.5%;
+        .title {
+          min-width: calc(100% - 440px);
+          &.vale {
+            min-width: 670px !important;
+            max-width: 971px !important;
+            background-size: 85vh;
+            a { bottom: 5rem; }
+            .box_principal-contador > div { bottom: 6.9rem; }
+          }
+        }
+        &.vale, &.vale_cyber, &.vale_80, &.vale_devolucion, &.vale_descuento {
+          background: linear-gradient(0deg, #BE7100 0%, #FFD855 100%) !important;
+          padding-top: 3rem!important;
+          // background: linear-gradient(126deg, #0855C4 0%, #0081F0 100%) !important;
+          
+        }
+      }
+      .concepto {
+        padding: 0rem 1.5rem;
+        .content { margin-top: 4rem; }
+        .content__row {
+          margin-top: 0;
+          padding: 0;
+          img, svg{
+            width: 6rem!important;
+            height: 6rem!important;
+          }
+        }
+      }
+      .beneficios, .beneficios_mercado {
+        .img-beneficio {
+          height: 80px;
+        }
+      }
+      .asistencia {
+        padding-bottom: 2.5rem;
+        .content {
+          padding-right: 0;
+          .telefono h3 {
+            font-size: 1.35rem;
+          }
+          .box {
+            .borde {
+              background-color: #fff;
+              height: 20rem;
+              padding-top: 1.5rem;
+              padding-bottom: 1.5rem;
+              border-radius: 3px;
+              h4 {
+                font-size: .8rem;
+                text-align: left;
+                line-height: 1;
+                background-image: url('../../static/media/seguro_vida/home/check_asistencia.svg');
+                background-repeat: no-repeat;
+                padding-left: 18px;
+                background-position-y: 3px;
+              }
+            }
+          }
+        }
+      }
+      .testimonios{
+        border-bottom: .5px solid #d4d4d4;
+      }
+    }
+  }
+  .stepper {
+    padding: 0 2rem;
+  }
+  // seccion de ayuda
+  .white-transparent {
+    .border_text h3 {
+      font-size: 1.1rem;
+    }
+  }
+    /** PASO: cotiza **/
+    #cotiza {
+      padding-bottom: 3rem;
+      .container { padding-bottom: 0; }
+      label { font-size: 15.5px; }
+      .content { padding-right: 6.5rem; padding-left: 6.5rem; }
+      .verificar-data {
+        .data {
+          h3 {
+            font-size: 1.1rem;
+          }
+        }
+        .col .text-right {
+          text-align: left!important;
+        }
+        .text-right button{
+          text-align: right !important;
+        }
+        .text-right h4 {
+          font-family: 'Omnes Medium';
+        }
+      }
+      #form-calculate {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        select {
+          height: calc(3em + 2px);
+        }
+        select + label[placeholder],
+        .select-wrapper + label[placeholder] {
+          margin-top: calc(-2.5em - 5px);
+          margin-bottom: calc((3em - 1em) + 2px);
+        }
+        .rango { 
+          > div { padding: 0; }
+          .row {
+            div:nth-child(1) .border,
+            div:nth-child(2) .border,
+            div:nth-child(3) .border,
+            div:nth-child(4) .border {
+              // border-right: 1.5px solid  #B2B4C7!important;
+            }
+          }
+          .selected {
+            img {
+              left: .1rem;
+            }
+          }
+        }
+      }
+    }
+    /***********************/
+
+    /** PASO: pago **/
+    #pago {
+      overflow: hidden;
+      h6, h6 span { font-size: .75rem }
+      max-width: 1440px;
+      margin: 0 auto;
+      min-height: 90vh;
+      &.ahorro-seguro { 
+        .border-blue {
+          box-shadow: 0px 2px 6px #33588B66;
+        }
+        .border-white {
+          box-shadow: none;
+        }
+        
+      }
+      .resumen {
+        >.container {
+          border: 1px solid #D8D8D8;
+          padding: 0;
+          hr { margin-top: 1rem; }
+        }
+        .title {
+          
+        }
+        .verify {
+          hr { margin-top: 14px; margin-bottom: 0; }
+        }
+      }
+      .title {
+        button {
+        }
+      }
+      .content {
+        .box-pago {
+          max-width: 480px;
+          margin: 0 auto;
+          .info-tooltip {
+            right: 2.2rem;
+            top: .5rem;
+          }
+          .modal-overlay-box {
+            .triangulo {
+              padding: 1.7rem .6rem;
+              left: 25.2rem;
+              top: -6.2rem;
+              width: 11.5rem;
+              &::before {
+                left: -1rem
+              }
+            }
+          }
+        }
+        
+      }
+      
+    }
+    /***********************/
+
+    #confirm {
+      h2, h2 span { font-size: 1.75rem!important; }
+      p { font-size: 18px; }
+      h3 span { font-size: 22px; }
+    }
+    // UNSUSCRIBE
+    .unsubscribe {
+      img, svg{
+        width: 19rem;
+      }
+    }
+    #preguntas-frecuentes {
+      
+      .banner {
+        height: 248px;
+        .container {
+          padding-top: 5rem;
+          max-width: 1170px;
+          min-width: 1170px;
+        }
+      }
+      .preguntas {
+        h3 { font-size: 28px;}
+        a > div {
+          height: 68px;
+        }
+        span, div {
+          font-size: 18px;
+        }
+      }
+      
+    }
+
+  
+}
+
+// front-end Me
+@media (min-width: 1366px) {
+  h2, h2 span { font-size: 2.5rem }
+  .triangulo {
+    left: 23.4rem;
+    width: 14.3rem;
+    p {
+      font-size: 13px;
+    }
+  }
+  .box-banner {
+    #banner-tv{
+      p { margin: 21px 0; font-size: 1.25rem;}
+      p a { font-size: .8rem; }
+      // img { width: 2.8rem; }
+      // min-width: 40%;
+      // p, p span { font-size: 12px; }
+    }
+  }
+  .segurouniversitario {
+    &.challenger {
+      .beneficios {
+        .img-fluid {
+          height: 14rem;
+        }
+      }
+    }
+  }
+  #home-box {
+    #home {
+      .consulta .texto header a,
+      .consulta .texto .card-body h3 {
+        font-size: 1.05rem;
+      }
+      .concepto,
+      .beneficios,
+      .beneficios_mercado,
+      .asistencia,
+      .testimonios, .consulta {
+        padding: 5.5rem 7rem ;
+      }
+      
+    }
+  }
+    #cotiza {
+      padding-bottom: 3rem;
+      .verificar {
+        .px-xl-5 {
+          padding-left: 2.5rem!important;
+          padding-right: 2.5rem!important;
+        }
+      }
+      #form-calculate {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        // .porcentajeDevolucion .triangulo { padding: 1.7rem 3px; }
+      }
+    }
+    #pago .content .box-pago .modal-overlay-box .triangulo {
+      padding: 1.7rem .3rem;
+      width: 11.9rem;
+    }
+}
+@media (min-width: 1200px) and (min-height: 700px) {
+  #home-box #home .cotiza .title.vale,
+  #home-box #home .cotiza .title.vale_cyber,
+  #home-box #home .cotiza .title.vale_netflix,
+  #home-box #home .cotiza .title.vale_devolucion,
+  #home-box #home .cotiza .title.vale_descuento {
+    // background-position-y: 7rem;
+    // a { bottom: 1rem; }
+    .box_principal-contador > div { bottom: 1.5rem; } //David (2.5rem orig)
+  }
+}
+
+@media (min-width: 1380px) {
+  .triangulo {
+    left: 23.9rem;
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 25.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .triangulo {
+    left: 25.5rem;
+  }
+  .box-banner {
+    #banner-tv {
+      padding-left: 128px;
+      padding-right: 128px;
+      .close {
+        right: calc(100% - 95%);
+      }
+    }
+  }
+  #home-box {
+    main > header {
+      #main-row-container {
+        .navbar-light {
+          padding-right: 128px;
+          padding-left: 128px;
+        }
+      }
+      
+    }
+    #home {
+      &.blackweek {
+        .box-cotiza {
+          background-image: url('../../static/media/seguro_vida/home/fondo_blackweek.svg'); background-repeat: no-repeat;
+          background-size: cover;
+          .cotiza {
+
+            background-image: none!important;
+          }
+        }
+      }
+      &.navidad {
+        .box-cotiza {
+          background-image: url('../../static/media/seguro_vida/home/fondo_navidad.svg'); background-repeat: no-repeat;
+          background-size: cover;
+          .cotiza {
+
+            background-image: none!important;
+          }
+        }
+      }
+      .cotiza {
+        padding-left: 128px;
+      }
+      .beneficios_mercado {
+        img { width: 5.5rem; }
+      }
+    }
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 26.5rem;
+  }
+}
+
+@media (min-width: 1460px) {
+  .triangulo {
+    left: 26.3rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .triangulo {
+    left: 27.3rem;
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 27rem;
+  }
+}
+
+@media (min-width: 1530px) {
+  #home-box #home {
+    .beneficios br {
+      display: block;
+    }
+  }
+
+}
+@media (min-width: 1500px) {
+  .triangulo {
+    left: 28.8rem;
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 26.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .triangulo {
+    left: 22.8rem;
+  }
+  .box-banner {
+    #banner-tv {
+      .col-md-1 {
+        max-width: 3%!important;
+      }
+      .close {
+        right: calc(100% - 98%);
+      }
+    }
+    
+  }
+  #home-box {
+    #home {
+      .concepto,
+      .beneficios, .beneficios_mercado, 
+      .asistencia
+      .testimonios, .consulta {
+        padding: 5.5rem 13rem ;
+      }
+      .cotiza {
+        // background-size: 58.5%;
+        .title.vale,
+        .title.vale_cyber,
+        .title.vale_devolucion {
+        // .title.vale_descuento {
+          background-size: 95vh;
+          background-position-y: 4rem;
+        }
+        .title.vale_netflix {
+          // background-size: contain;
+        }
+      }
+      .concepto {
+        padding-right: 7rem !important;
+        padding-left: 7rem !important;
+        max-width: 1440px;
+        margin: 0 auto;  
+        .content img, svg{
+          width: 5rem;
+        }
+      }
+      .beneficios, .beneficios_mercado {
+        > div { 
+          padding-right: 4.5rem !important;
+          padding-left: 4.5rem !important;
+          max-width: 1440px;
+          margin: 0 auto;  }
+        .img-beneficio { height: 6rem; }
+        img, svg{ width: 6rem; }
+        br { display: none }
+      }
+      .asistencia {
+        padding-right: 13rem;
+        padding-left: 13rem;
+        .content {
+          .box .borde h4 {
+            font-size: .9rem;
+          }
+        }
+      }
+      .testimonios {
+        padding-right: 7rem !important;
+        padding-left: 7rem !important;
+        max-width: 1440px;
+        margin: 0 auto;  
+      }
+      .consulta {
+        padding-right: 13rem;
+        padding-left: 13rem;
+        max-width: initial;
+        h2 br {
+          display: block;
+        }
+      }
+    }
+  }
+  #cotiza {
+    .content {
+      padding-right: 15.5rem;
+      padding-left: 15.5rem;
+    }
+  }
+
+  #confirm {
+    .container {
+      padding-right: 5.5rem;
+      padding-left: 5.5rem;
+    }
+  }
+}
+@media (min-width: 1630px) {
+  .triangulo {
+    left: 24.8rem;
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 26.5rem;
+  }
+}
+@media (min-width: 1700px) {
+  .triangulo {
+    left: 25.8rem;
+  }
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    left: 26.5rem;
+  }
+}
+@media (min-width: 1900px) {
+  h3, h3 span { font-size: 1.3rem; }
+  // h6, h6 span { font-size: 1.2rem }
+  .navbar-dark {
+    #nav-collapse ul {
+      li a { font-size: .9rem; }
+    }
+  }
+  #home-box {
+    .form-control, .btn, .btn-dark.disabled, span {
+      font-size: 1.2rem;
+    }
+    #home {
+      .beneficios, .beneficios_mercado,
+      .asistencia, .testimonios,
+      .consulta {
+        padding-right: 15rem;
+        padding-left: 15rem;
+      }
+      .concepto,
+      .beneficios, .beneficios_mercado,
+      .asistencia,
+      .testimonios, .consulta {
+        padding: 5.5rem 18rem ;
+      }
+     
+      // Primera sección
+      .cotiza {
+        // padding-left: 0;
+        .title.vale,
+        .title.vale_cyber,
+        .title.vale_netflix,
+        .title.vale_devolucion,
+        .title.vale_descuento {
+          background-size: 98vh;
+        }
+      }
+      // Segunda sección
+      .concepto {
+        .content img, svg{
+          width: 5.5rem;
+        }
+      }
+      .beneficios {
+        img, svg{ height: 4rem; width: 11rem; }
+      }
+      .asistencia{
+        .content {
+          // h3 { font-size: 1.5rem; }
+          h3.text-info { font-size: 1.2rem; }
+        }
+      }
+      .testimonios {
+        .content {
+          h3, h3 span, h4, h4 span { font-size: .95rem; }
+          h4 { height: 5.5rem; }
+          .box .borde {
+            height: 18rem;
+          }
+        }
+      }
+      &.ahorroseguro {
+        &.experimento_web {
+          .cotiza .title h1,
+          .cotiza .title h1 span { font-size: 2.2rem!important; }
+        }
+      }
+    }
+  }
+  .stepper {
+    padding: 0 5rem;
+  }
+  /* PASO: COTIZA */
+  #cotiza {
+    .content {
+      padding-right: 23rem;
+      padding-left: 23rem;
+    }
+    .verificar {
+      padding-right: 3rem;
+      padding-left: 15rem;
+    }
+    .calcular {
+      padding-right: 15rem;
+      padding-left: 3rem;
+    }
+  }
+  #confirm {
+    padding: 0 21rem;
+  }
+}
+
+.text-color-FFFFFF {
+  color: #FFFFFF !important;
+}
+
+@media (min-width: 2500px) {
+  #home-box #home .cotiza .title.vale {
+    min-width: 50% !important;
+    max-width: 80% !important;
+    background-size: 85vh;
+    background-position-y: center;
+  }
+}

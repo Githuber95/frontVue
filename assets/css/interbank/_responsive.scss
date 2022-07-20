@@ -1,0 +1,283 @@
+@media (min-width: 360px) {
+  
+  #home-box.ibk {
+    header #nav-collapse {
+      a { font-size: 1.2rem; }
+      span { font-size: 1rem; }
+    }
+    .box-banner #banner-tv p,
+    .box-banner #banner-tv p span { font-size: .75rem; }
+    #home {
+      h3, h3 span { font-size: 1.05rem; }
+      h4, h4 span { font-size: .77rem; }
+      .cotiza {
+          .pila {
+            h2 { font-size: 1rem }
+            h2 span { font-size: 1.2rem }
+          }
+          .title {
+            .principal h1, .principal h1 p,
+            .principal h1 span {
+                font-size: 1.35rem;
+            }
+            a { bottom: 8rem; }
+          }
+          .content {
+              .box-quote span {
+                  font-size: .8rem;
+              }
+          }
+      }
+      .asistencia {
+        .content {
+        .telefono h3 { font-size: 1.1rem; }
+      }
+      }
+    }
+  }
+  .ibk {
+    .modal-overlay-box p { font-size: .8rem; }
+    .form-control, .btn, select { font-size: 1rem; }
+    h4, h4 span { font-size: 1rem; }
+    #cotiza {
+      #form-calculate {
+        select + label[placeholder] {
+          margin-top: calc(-2.5em - 5px);
+        }
+        label { font-size: 1rem; }
+      }
+    }
+    #pago {
+      h4, h4 span { font-size: 1rem; }
+      h5, h5 span { font-size: .75rem; }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  #home-box.ibk {
+    .box-banner #banner-tv p,
+    .box-banner #banner-tv p span { font-size: .75rem; }
+    #home {
+      h3, h3 span { font-size: 1.12rem; }
+      h4, h4 span { font-size: .8rem; }
+      .cotiza {
+        .content .box-quote h3 {
+          font-size: 1.1rem;
+        }
+        .title {
+          // a { bottom: 8rem; }
+          a, a span { font-size: .7rem; }
+        }
+      }
+    }
+  }
+  .ibk {
+    h5, h5 span { font-size: .9rem; }
+      .modal {
+          h2, h2 span {
+            font-size: 1.8rem;
+          }
+          h3, h3 span {
+              font-size: 1.05rem;
+          }
+        }
+    #cotiza {
+      #form-calculate {
+        span { font-size: .9rem; }
+        select + label[placeholder] {
+          margin-top: calc(-2.5em - 2px);
+        }
+        label { font-size: 1.1rem; }
+      }
+    }
+    #pago {
+      h4, h4 span { font-size: 1rem; }
+      h5, h5 span { font-size: .8rem; }
+    }
+  }
+}
+
+
+@media (min-width: 410px) {
+  #home-box.ibk {
+    .box-banner #banner-tv p,
+    .box-banner #banner-tv p span { font-size: .75rem; }
+    #home {
+      .cotiza {
+        .title {
+          a, a span { font-size: .75rem; }
+        }
+      }
+    }
+  }
+  .ibk {
+      .modal {
+          h2, h2 span {
+            font-size: 1.8rem;
+          }
+          h3, h3 span {
+              font-size: 1.15rem;
+          }
+      }
+    #pago {
+      h4, h4 span { font-size: 1.05rem; }
+      h5, h5 span { font-size: .9rem; }
+      h6, h6 span { font-size: 12px; }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  #home-box.ibk {
+    .box-banner #banner-tv p,
+    .box-banner #banner-tv p span { font-size: 1.2rem; }
+  }
+  #ibk {
+      .modal {
+          h2, h2 span {
+            font-size: 1.8rem;
+          }
+          h3, h3 span {
+              font-size: 20px;
+          }
+      }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .ibk {
+    .triangulo { top: -.8rem; }
+      .modal {
+          h2 {
+            font-size: 1.8rem;
+          }
+          h3, h3 span {
+              font-size: 19px;
+          }
+      }
+    
+    #cotiza {
+      #form-calculate {
+        select {
+          height: calc(3em + 4px);
+        }
+        select + label[placeholder] {
+          height: calc(3em + -9px);
+          margin-top: calc(-2.5em - 0);
+          margin-bottom: calc((4em - 1em) + -37px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .tyc .container { max-width: 1140px; }
+  #home-box.ibk {
+    .alerta { z-index: 1; bottom: 6rem; right: 1.5rem;}
+    #home .cotiza .title a { height: 100%!important; bottom: 0!important;; }
+    .box-banner #banner-tv p {
+      font-size: 1.2rem;
+    }
+    #home {
+      .container { margin: 0; max-width: 100%; }
+      .cotiza {
+        background-image: url('../../../static/media/interbank/home/home_familia_protegida.svg');
+        &.promocion {
+          background-image: url('../../../static/media/interbank/home/banner_promocion_interbank.svg');
+          background-size: 57.5%;
+        }
+        .title {
+          background-image: none;
+          &.promocion, &.promocion_vale_80, &.promocion_vale_100 { 
+            background-image: none;
+            background-color: transparent;
+          }
+          .principal {
+            height: 50%;
+            
+          }
+          .principal h1, .principal h1 p,
+          .principal h1 span {
+              font-size: 1.75rem;
+          }
+          .content {
+            hr { display: none; }
+            
+            
+          }
+        }
+        .content {
+          .box-quote span { font-size: .7rem; }
+          .box-quote h3 { font-size: 1.1rem!important; }
+        }
+      }
+
+        
+    }
+  }
+
+  #home-box.endosos {
+    #home .cotiza {
+      background-image: url('../../../static/media/endosos/banner_principal.svg');
+      .content .box-quote h3 {
+        margin-top: 2.8rem;
+        margin-bottom: 0.7rem;
+        font-size: 1.4rem !important;
+      }
+      .title .principal {
+        height: 60%;
+      }
+    }
+    #home .concepto {
+      padding-bottom: 5.5rem;
+    }
+  }
+  .ibk {
+    .alerta { right: 1.5rem; bottom: 6rem;}
+    .stepper .steps .steps-marker {
+      width: 3rem;
+      height: 3rem;
+    }
+    .stepper .steps .steps-marker svg {
+      height: 26px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+    #home-box.ibk {
+      #home h3, #home h3 span {
+        font-size: 1rem;
+      }
+    }
+    #ibk header { padding: 0 7rem; }
+    .ibk {
+        .modal {
+            h2 {
+              font-size: 2.2rem;
+            }
+            h3, h3 span {
+                font-size: 1.1rem;
+            }
+        }
+      .triangulo {
+        top: -7.5rem;
+      }
+      .modal-overlay-box {
+        p, p span { font-size: .7rem; }
+      }
+      
+      #pago {
+
+      }
+    }
+}
+
+@media (min-width: 1440px) {
+  #pago .content .box-pago .modal-overlay-box .triangulo {
+    padding-left: 1.2rem;
+  }
+}

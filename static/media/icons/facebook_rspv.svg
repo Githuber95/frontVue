@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - https://www.bohemiancoding.com/sketch -->
+    <title>Group 26 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 15.4285714 0 15.4285714 37.2857143 0 37.2857143"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-26-Copy">
+            <g id="Group-25">
+                <g id="Group-22">
+                    <circle id="Oval" fill="#39569C" cx="36" cy="36" r="36"></circle>
+                    <g id="Group-3" transform="translate(27.000000, 18.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M15.4285714,12.0749955 L14.8237522,18.656329 L10.1682859,18.656329 L10.1682859,37.2857143 L3.27789274,37.2857143 L3.27789274,18.656329 L0,18.656329 L0,12.0749955 L3.27915541,12.0749955 L3.27915541,7.81506756 C3.27915541,4.76902054 4.56834204,0 10.2352075,0 L15.3439725,0.0241074485 L15.3439725,6.41399938 L11.6355091,6.41399938 C11.0319526,6.41399938 10.1708113,6.75292174 10.1708113,8.20787716 L10.1708113,12.0764136 L15.4285714,12.0749955 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

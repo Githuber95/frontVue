@@ -1,0 +1,381 @@
+image: node:14.17.4
+
+variables:
+  DEPLOY_FOLDER: ${CI_COMMIT_SHA}_deploy
+  DEPLOY_BACKUP: ${CI_COMMIT_SHA}_backup
+
+stages:
+  - install
+  - build
+  - deploy
+
+dependencies:
+  stage: install
+  script:
+    - npm install
+  artifacts:
+    expire_in: 1h
+    paths:
+      - node_modules/
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+
+build-dev:
+  stage: build
+  needs: [dependencies]
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+      - dist/
+    policy: pull-push
+  script:
+    - npm --version
+    - npm run generate-dev
+  artifacts:
+    expire_in: 1h
+    paths:
+      - dist/
+  only:
+    - develop
+    - 94-interbank-campaña
+    
+backup-files-dev:
+  stage: deploy
+  needs: [build-dev]
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo $DEPLOY_BACKUP
+    - echo $SERVER_USER@$SERVER_IP_ADDRESS
+    # deploy
+    - scp -r $SERVER_USER@$SERVER_IP_ADDRESS:/usr/share/nginx/seguro-de-vida/seguro-de-vida/ $DEPLOY_BACKUP/
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_BACKUP/
+  environment:
+    name: development
+  only:
+    # Trigger deployments only in these branches:
+    - develop
+    - 94-interbank-campaña
+
+copy-files-dev:
+  stage: deploy
+  needs: [build-dev]
+  dependencies:
+    - build-dev
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - dist/
+    policy: pull
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS rm -fr /home/devops/*_deploy*
+    - mv dist $DEPLOY_FOLDER
+    - scp -r $DEPLOY_FOLDER/ $SERVER_USER@$SERVER_IP_ADDRESS:/home/devops/
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS  ls
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_FOLDER/
+  environment:
+    name: development
+  only:
+    # Trigger deployments only in these branches:
+    - develop
+    - 94-interbank-campaña
+
+deploy-dev:
+  stage: deploy
+  needs: 
+    - copy-files-dev
+    - backup-files-dev
+  dependencies:
+    - copy-files-dev
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script: 
+    - echo "deploy to staging"
+    - echo ${DEPLOY_FOLDER}
+    - echo "/home/devops/${DEPLOY_FOLDER}/*"
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS sudo chown -R devops:devops /usr/share/nginx/seguro-de-vida/seguro-de-vida
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS  cp -rf /home/devops/${DEPLOY_FOLDER}/* /usr/share/nginx/seguro-de-vida/seguro-de-vida/
+  environment:
+    name: development
+  only:
+    # Trigger deployments only in these branches:
+    - develop
+    - 94-interbank-campaña
+
+build-staging:
+  stage: build
+  needs: [dependencies]
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+      - dist/
+    policy: pull-push
+  script:
+    - npm --version
+    - npm run generate-test
+  artifacts:
+    expire_in: 1h
+    paths:
+      - dist/
+  only:
+    - staging
+    - 95-gtm-contenerdor-y-marcaciones
+    - 93-coberturas-adicionales
+    - 101-change-channelsellis
+backup-files-staging:
+  stage: deploy
+  needs: [build-staging]
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo $DEPLOY_BACKUP
+    - echo $SERVER_USER@$SERVER_IP_ADDRESS
+    # deploy
+    - scp -r $SERVER_USER@$SERVER_IP_ADDRESS:/usr/share/nginx/seguro-de-vida/seguro-de-vida/ $DEPLOY_BACKUP/
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_BACKUP/
+  environment:
+    name: staging
+  only:
+    # Trigger deployments only in these branches:
+    - staging
+    - 95-gtm-contenerdor-y-marcaciones
+    - 93-coberturas-adicionales
+    - 101-change-channelsellis
+
+copy-files-staging:
+  stage: deploy
+  needs: [build-staging]
+  dependencies:
+    - build-staging
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - dist/
+    policy: pull
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo $DEPLOY_FOLDER
+    - echo "Pruebas"
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS rm -fr /home/devops/*_deploy*
+    - mv dist $DEPLOY_FOLDER
+    - scp -r $DEPLOY_FOLDER/ $SERVER_USER@$SERVER_IP_ADDRESS:/home/devops/
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS  ls
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_FOLDER/
+  environment:
+    name: staging
+  only:
+    # Trigger deployments only in these branches:
+    - staging
+    - 95-gtm-contenerdor-y-marcaciones
+    - 93-coberturas-adicionales
+    - 101-change-channelsellis
+
+deploy-staging:
+  stage: deploy
+  needs: 
+    - copy-files-staging
+    - backup-files-staging
+  dependencies:
+    - copy-files-staging
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script: 
+    - echo "deploy to staging"
+    - echo ${DEPLOY_FOLDER}
+    - echo "/home/devops/${DEPLOY_FOLDER}/*"
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS sudo chown -R devops:devops /usr/share/nginx/seguro-de-vida/seguro-de-vida
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS  cp -rf /home/devops/${DEPLOY_FOLDER}/* /usr/share/nginx/seguro-de-vida/seguro-de-vida/
+  environment:
+    name: staging
+  only:
+    # Trigger deployments only in these branches:
+    - staging
+    - 95-gtm-contenerdor-y-marcaciones
+    - 93-coberturas-adicionales
+    - 101-change-channelsellis
+
+build-prod:
+  stage: build
+  needs: [dependencies]
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+      - dist/
+    policy: pull-push
+  script:
+    - npm --version
+    - npm run generate
+  artifacts:
+    expire_in: 1h
+    paths:
+      - dist/
+  only:
+    - master
+    - 92-campanas-interseguro
+    - 104-campana-cyber-wow
+    
+backup-files-prod:
+  stage: deploy
+  needs: [build-prod]
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo $DEPLOY_BACKUP
+    - echo $SERVER_USER
+    - scp -r $SERVER_USER@$SERVER_IP_ADDRESS:/usr/share/nginx/seguro-de-vida/seguro-de-vida/ $DEPLOY_BACKUP/
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_BACKUP/
+  environment:
+    name: production
+  only:
+    # Trigger deployments only in these branches:
+    - master
+    - 92-campanas-interseguro
+    - 104-campana-cyber-wow
+
+copy-files-prod:
+  stage: deploy
+  needs: [backup-files-prod]
+  dependencies:
+    - backup-files-prod
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - dist/
+    policy: pull
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo $DEPLOY_FOLDER
+    - echo "Production"
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS rm -fr /home/devops/*_deploy*
+    - mv dist $DEPLOY_FOLDER
+    - echo $SERVER_USER
+    - echo $SERVER_IP_ADDRESS
+    - scp -r $DEPLOY_FOLDER/ $SERVER_USER@$SERVER_IP_ADDRESS:/home/devops/
+  artifacts:
+    expire_in: 1h
+    paths:
+      - $DEPLOY_FOLDER/
+  environment:
+    name: production
+  only:
+    # Trigger deployments only in these branches:
+    - master
+    - 92-campanas-interseguro
+    - 104-campana-cyber-wow
+
+deploy_prod:
+  stage: deploy
+  needs: [copy-files-prod]
+  dependencies:
+    - copy-files-prod
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+    - eval $(ssh-agent -s)
+    # Inject the remote's private key
+    - echo "$DEVOPS_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null #adding a ssh private key from variables, pair of the one registered on server-fronend
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    # Append keyscan output into known hosts
+    - ssh-keyscan $SERVER_IP_ADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script: 
+    - echo "deploy to production"
+    - echo ${DEPLOY_FOLDER}
+    - echo "/home/devops/${DEPLOY_FOLDER}/*"
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS sudo chown -R devops:devops /usr/share/nginx/seguro-de-vida/seguro-de-vida
+    - ssh $SERVER_USER@$SERVER_IP_ADDRESS  cp -rf /home/devops/${DEPLOY_FOLDER}/* /usr/share/nginx/seguro-de-vida/seguro-de-vida/
+  environment:
+    name: production
+  only:
+    # Trigger deployments only in these branches:
+    - master
+    - 92-campanas-interseguro
+    - 104-campana-cyber-wow

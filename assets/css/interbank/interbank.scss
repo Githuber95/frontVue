@@ -1,0 +1,356 @@
+
+.ibk {
+  h1, h1 span, h2, h2 span, h3, h3 span, a, li,
+  h4, h4 span, h5, h5 span, h6, h6 span, p, span ,select, input, button {
+    font-family: 'Montserrat Regular'!important;
+  }
+  color: #333333;
+  h2, h2 span {
+    font-size:  1.34rem;
+  }
+  h4, h4 span {
+    font-size:  .94rem;
+  } h5, h5 span {
+    font-size:  .8rem;
+  }
+  p, p span {
+    font-size:  .82rem;
+  }
+  // .omnes-light { font-family: 'Montserrat'!important; font-weight: 300; }
+  .omnes-medium { font-family: 'Geometria Bold'!important; }
+  // .omnes-regular { font-family: 'Montserrat'!important; font-weight: 400; }
+  .omnes-semibold { font-family: 'Geometria Medium'!important;}
+    
+    .text-blue {color: #0033A1!important;}
+    .text-primary {color: #0033A1!important;}
+    .text-black {color: #454a6c!important;}
+    .text-secondary {color: #00ADEE!important;}
+    .text-info {color: #717285!important;}
+    .text-light {color: #e8e8e8!important;}
+    .text-dark{color: #00BB31!important;}
+    .bg-primary {background-color: #0033A1!important;}
+    .bg-secondary {background-color: #00ADEE!important;}
+    .bg-secondary-opacity { background-color: #F4F8FC!important;}
+    .bg-info {background-color: #717285!important;}
+    .bg-light {background-color: #e8e8e8!important;}
+    .bg-dark{background-color: #00BB31!important;}
+    .bg-white { background-color: white; }
+    .btn-primary {
+      border-color: #0033A1!important;
+      background-color: #0033A1!important;}
+    .btn-secondary {
+      border-color: #00ADEE!important;
+      background-color: #00ADEE!important;}
+    .btn-info {
+      border-color: #717285!important;
+      background-color: #717285!important;}
+    .btn-light {
+      border-color: #e8e8e8!important;
+      background-color: #e8e8e8!important;}
+    .btn-dark{
+      color: white!important;
+      border-color: #00BB31!important;
+      background-color: #00BB31!important;}
+    .form-control, .btn {
+      font-size: .88rem;
+    }
+    .modal-overlay-box {
+      p {
+        font-size: .68rem;
+      }
+    }
+}
+
+.box-endosos {
+  p { font-size: 11px; }
+}
+
+.endosos .omnes-medium { font-family: 'Geometria Medium'!important; }
+.endosos .omnes-semibold { font-family: 'Geometria Bold'!important;}
+// Common 
+.ibk {
+  #cotiza .coverage-adicional .card-body a.not-collapsed {
+    background-image: none;
+  }
+  .abandono {
+    
+    &.bg-ibk {
+      .modal-content{
+        background-color: #00BB31!important;
+      }
+      button {
+        background-color: #0855c4!important;
+        color: #00BB31!important;
+      }
+    }
+  }
+  .modal {
+    button {
+      font-size: 15px!important;
+    }
+    h2, h2 span {
+      font-size:  1.57rem;
+    }
+    h3, h3 span {
+      font-size: .95rem;
+    }
+    li {
+      font-size: .9rem;
+    }
+  }
+  #modalPreguntasFrecuentes {
+    .dropdown-toggle {
+      background-color: #0855c4!important;
+    }
+    .dropdown button, select {
+      background-image: url('../../../static/media/icons/flecha_abajo-azul.svg')!important;
+      border-top-color: #C5C5C5 !important;
+      border-right-color: #C5C5C5 !important;
+      border-left-color: #C5C5C5 !important;
+      border-bottom-color: #C5C5C5 !important;
+      box-shadow: none;
+      background-color: transparent !important;
+      border-radius: 3px;
+      height: 3rem;
+    }
+  }
+  .dropdown button, select {
+    background-image: url('../../../static/media/interbank/home/flecha_abajo-select.svg')!important;
+  }
+  .stepper {
+    margin-bottom: 1.3rem;
+    .steps.is-horizontal .steps-segment:not(:last-child):after { height: 0.15em; top: 1.2rem;}
+    .steps .steps-marker { width:2.3rem; height: 2.3rem; }
+    .steps-marker svg { position: absolute; height: 20px; }
+    .steps-marker svg { fill: #717285; }
+    p { color: #717285; padding-left: 3px; font-size: 11px; margin-top: 5px; }
+    li:last-child p { padding-left: 8px; }
+    .steps-segment:after { background-color: #0033A1}
+    .steps-segment.is-active:after,
+    .steps-segment.is-active ~ .steps-segment:after { background-color: #E7EAED }
+    // active
+    .act {
+      p { color: #0033A1; }
+      .steps-marker:not(.is-hollow), .cotiza .stepper .steps:not(.is-hollow) .steps-marker:not(.is-hollow),
+      .steps-marker { background-color: #0033A1!important }
+      .steps-marker svg { fill: #fff; }
+      span { cursor: pointer; }
+    }
+    // inactive
+    .inact {
+      .steps-marker { background-color: #fff; border: 1.5px solid #E7EAED; }
+      .steps-marker svg { fill: #454A6C; }
+    }
+  }
+}
+.ibk .box-banner {
+  &.vale {background: #6BA9E4!important;}
+  .box-banner #banner-tv p, .box-banner #banner-tv p a { font-size: .75rem; }
+}
+
+// HOME
+#home-box.ibk {
+  #home {
+    h4 { font-size: .67rem; }
+    .cotiza {
+      .title {
+        background-image: url('./../../../static/media/interbank/home/banner_seguro_de_vida.svg');
+        background-position-x: 0;
+        a {
+          position: absolute;
+          bottom: 7rem;
+          right: 1.2rem;
+          color: #fff;
+          text-align: right;
+        }
+        a, a span { font-size: .65rem; }
+        .principal {
+          // height: 50%;
+          // align-items: flex-end;
+          h1, h1 p {
+            font-size: 1.1rem;
+          }
+        }
+        &.promocion {
+          background-color: #00BB31;
+          background-image: url('./../../../static/media/interbank/home/banner_promocion_interbank-responsive.svg');
+          background-size: contain;
+          background-position-y: 2rem;
+          background-position-x: -1rem!important;
+        }
+      }
+    }
+  }
+  main > header #main-row-container #nav-collapse ul li a {
+    font-family: 'Montserrat Regular'!important;
+    span { font-family: 'Omnes Regular'!important; }
+    #banner-tv p,
+    #banner-tv p span {
+      font-size: .5rem;
+    }
+    // a { font-size: .8re}m; }
+  }
+  .text-primary { color: #333333!important; }
+  // .testimonios {
+  //   .carousel-caption .text-primary { 
+  //     color: #00BB31!important;
+  //   }
+  // }
+  .asistencia {
+    .content .carousel.slide .carousel-caption h4, .content .box .borde h4 {
+      background-image: url('./../../../static/media/interbank/home/check_asistencia.svg')!important;
+    }
+  }
+  .consulta {
+    .questions__acordeon .card-header
+    {
+      a.collapsed,  a.collapsed.btn-secondary[data-v-894ab222]:not(:disabled):not(.disabled):active,
+      a.collapsed.btn-secondary:not(:disabled):not(.disabled).active,
+      a.collapsed.show > .btn-secondary.dropdown-toggle {
+        background-image: url('./../../../static/media/interbank/home/+.svg');
+      }
+      a[data-v-894ab222], .consulta .questions__acordeon .card-header a.btn-secondary[data-v-894ab222][data-v-894ab222]:not(:disabled):not(.disabled):active {
+        background-image: url('./../../../static/media/interbank/home/+.svg');
+      }
+      a, a.btn-secondary[data-v-894ab222]:not(:disabled):not(.disabled):active,
+      a.btn-secondary:not(:disabled):not(.disabled).active,
+      a.show > .btn-secondary.dropdown-toggle {
+        // font-family: 'Montserrat'!important; font-weight: 500;
+      }
+      a.collapsed,  a.collapsed.btn-secondary[data-v-894ab222]:not(:disabled):not(.disabled):active,
+      a.collapsed.btn-secondary:not(:disabled):not(.disabled).active,
+      a.collapsed.show > .btn-secondary.dropdown-toggle {
+        // font-family: 'Montserrat'!important; font-weight: 400;
+      }
+    }
+  }
+}
+
+#home-box.endosos {
+  #home .cotiza .title {
+    background-image: url('./../../../static/media/endosos/banner_principal-responsive.svg');
+  }
+  #home .concepto {
+    padding-bottom: 2.7rem;
+  }
+}
+.ibk {
+  
+  #cotiza, #pago, #confirm {
+    .text-primary {
+      color: #333333!important;
+    }
+  }
+  #cotiza {
+    label { font-size: .95rem; }
+    h3.text-primary {
+      color: #333333!important;
+    }
+    .range-slider-tooltip, .range-slider-tooltip:before, input[type='range']::-webkit-slider-thumb {
+      color: #0033A1;
+      border-color: #0033A1;
+    }
+    #modalInfo {
+      .modal-body a { 
+        color: #00BB31;
+        text-decoration: underline;
+      }
+      p {
+        color: #0033A1!important;
+        font-size: .75rem;
+      }
+      .cobertura li {
+        background-image: url('./../../../static/media/common/cotiza/interbank/check.svg');
+        background-repeat: no-repeat;
+        background-position-y: 4px;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+      .sin-cobertura li {
+        line-height: 1;
+        margin-bottom: 15px;
+        background-image: url('./../../../static/media/common/cotiza/interbank/error.svg');
+        background-repeat: no-repeat;
+        background-position-y: 4px;
+      }
+    }
+    #form-calculate {
+      .box-promocion p { font-size: 1.2rem; }
+      select.valid {
+        border-color: #0033A1!important;
+        color: #0033A1;
+      }
+      h4 {
+        color: #0855c4!important;
+      }
+      div:first-child div:first-child h4 {
+        color: #0033A1!important;
+      }
+      select + label[placeholder] {
+        margin-top: calc(-2.5em - 8px);
+      }
+      span {
+        font-size: 0.82rem;
+      }
+      .rango {
+        .selected {
+          background-color: #00BB31;
+          img { left: .1rem; }
+        }
+      }
+      #sendQuote, #optionVidaFree {
+        h3, h3 span { font-size: 1.2rem; }
+        input { font-size: 1rem; }
+      }
+    }
+  }
+  #pago {
+    h4, h4 span { font-size: 1.05rem; }
+    h4, h4 span { font-size: .85rem; }
+    h5, h5 span { font-size: .68rem; }
+    .btn-primary {
+      background-color: #00BB31!important;
+      border-color: #00BB31!important;
+    }
+    button.btn-white {
+      border-color: #00BB31!important;
+      background-color: #fff;
+      color: #00BB31!important;
+    }
+    .box-beneficios {
+      .text-primary {
+        color: #00BB31!important;
+      }
+    }
+    .content {
+      .box-pago {
+        h3 {
+          letter-spacing: -1.5px;
+        }
+        img {
+          // width: 11rem;
+        }
+      }
+    }
+  }
+  #confirm {
+    .text-secondary {
+      color: #333333!important;
+    }
+    p.omnes-semibold, .clicktocall {
+      color: #00BB31!important;
+    }
+    .text-primary {
+
+      .bg-secondary-opacity {
+        background-color: #F4F6FB!important;
+      }
+    }
+    .text-secondary {
+      .bg-secondary-opacity {
+        background-color: #EAF9EE!important;
+      }
+    }
+  }
+}
+@import "_responsive.scss";

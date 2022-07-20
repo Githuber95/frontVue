@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.195" height="39.195" viewBox="0 0 39.195 39.195">
+	<defs>
+		<style>.a{fill:transparent;}.b{fill:#00BB31;}</style>
+	</defs>
+	<g transform="translate(-380.805 -624.734)">
+		<g transform="translate(42.338 5.572)"><circle class="a" cx="19.598" cy="19.598" r="19.598" transform="translate(338.467 619.162)"/></g>
+		<path class="b" d="M-746.133-155a2,2,0,0,1-2-2v-3.867H-752a2,2,0,0,1-2-2v-.266a2,2,0,0,1,2-2h3.867V-169a2,2,0,0,1,2-2h.266a2,2,0,0,1,2,2v3.867H-740a2,2,0,0,1,2,2v.266a2,2,0,0,1-2,2h-3.866V-157a2,2,0,0,1-2,2Z" transform="translate(1146.5 808)"/>
+	</g>
+</svg>

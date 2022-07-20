@@ -1,0 +1,28 @@
+/* Font Family Omnes */
+@font-face {
+    font-family: "Geometria Bold";
+    font-display: swap;
+    src: url("./../fonts/interbank/geometria-bold.woff2") format('woff2'),
+         url("./../fonts/interbank/geometria-bold.woff") format('woff'),
+         url("./../fonts/interbank/geometria-bold.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: "Geometria Medium";
+    font-display: swap;
+    src: url("./../fonts/interbank/geometria-medium.woff2") format('woff2'),
+         url("./../fonts/interbank/geometria-medium.woff") format('woff'),
+         url("./../fonts/interbank/geometria-medium.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: "Montserrat Regular";
+    font-display: swap;
+    src: url("./../fonts/interbank/montserrat-regular.woff2") format('woff2'),
+         url("./../fonts/interbank/montserrat-regular.woff") format('woff'),
+         url("./../fonts/interbank/montserrat-regular.ttf") format('truetype');
+  }
+  
+  
+  /* Fonts */
+  .geometria-bold { font-family: 'Geometria Bold'!important; }
+  .geometria-medium { font-family: 'Geometria Medium'!important; }
+  .montserrat-regular { font-family: 'Montserrat Regular'!important; }
